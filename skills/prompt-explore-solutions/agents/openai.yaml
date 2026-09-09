@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt · Explore Solutions"
+  short_description: "先比较成熟方案、前提与取舍，再决定实现路线"
+  default_prompt: "Use $prompt-explore-solutions to explore mature solution options before implementation."
+
+policy:
+  allow_implicit_invocation: false
