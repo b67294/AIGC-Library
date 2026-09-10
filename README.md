@@ -13,3 +13,6 @@ AIGC-Library/
 - `prompt-explore-solutions`：实现前先探索成熟方案与完整选项空间。
 - `prompt-effect-whitebox`：将已实现的效果拆解为可理解、可复用的白盒心智模型。
 
+当前 Module：
+
+- `background-removal`：RMBG-2.0、BiRefNet 与 VITMatte 去背景流程。
