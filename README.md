@@ -11,4 +11,5 @@ AIGC-Library/
 当前 Skill：
 
 - `prompt-explore-solutions`：实现前先探索成熟方案与完整选项空间。
+- `prompt-effect-whitebox`：将已实现的效果拆解为可理解、可复用的白盒心智模型。
 

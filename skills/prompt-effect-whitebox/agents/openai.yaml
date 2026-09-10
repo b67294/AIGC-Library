@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt - Effect Whitebox"
+  short_description: "把已实现的效果拆成开发者可复用的白盒心智模型"
+  default_prompt: "Use $prompt-effect-whitebox to explain this implemented effect as a reusable white-box mental model."
+
+policy:
+  allow_implicit_invocation: false
