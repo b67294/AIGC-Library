@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "group-decision01",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 420,
+      "label": "01 · 决策阶段",
+      "color": "5"
+    },
+    {
+      "id": "group-build0002",
+      "type": "group",
+      "x": 460,
+      "y": 0,
+      "width": 360,
+      "height": 420,
+      "label": "02 · 可复用资产",
+      "color": "4"
+    },
+    {
+      "id": "group-review003",
+      "type": "group",
+      "x": 920,
+      "y": 0,
+      "width": 360,
+      "height": 420,
+      "label": "03 · 复盘沉淀",
+      "color": "3"
+    },
+    {
+      "id": "card-explore0001",
+      "type": "file",
+      "file": "catalog/探索成熟方案.md",
+      "x": 40,
+      "y": 90,
+      "width": 280,
+      "height": 240
+    },
+    {
+      "id": "card-background02",
+      "type": "file",
+      "file": "catalog/去背景技术复刻.md",
+      "x": 500,
+      "y": 90,
+      "width": 280,
+      "height": 240
+    },
+    {
+      "id": "card-whitebox003",
+      "type": "file",
+      "file": "catalog/效果白盒拆解.md",
+      "x": 960,
+      "y": 90,
+      "width": 280,
+      "height": 240
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-explore-build",
+      "fromNode": "card-explore0001",
+      "fromSide": "right",
+      "toNode": "card-background02",
+      "toSide": "left",
+      "label": "选择方案后实现"
+    },
+    {
+      "id": "edge-build-review",
+      "fromNode": "card-background02",
+      "fromSide": "right",
+      "toNode": "card-whitebox003",
+      "toSide": "left",
+      "label": "实现后提炼"
+    }
+  ]
+}
+

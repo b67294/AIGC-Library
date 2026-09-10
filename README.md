@@ -4,9 +4,19 @@
 
 ```text
 AIGC-Library/
-├── modules/   可复用的算法、工作流和工程模块
-└── skills/    可由 Codex 显式调用的个人 Skill
+├── HOME.md          Obsidian 首页
+├── library.base     可筛选的资产卡片库
+├── aigc-map.canvas  重要资产的关系地图
+├── catalog/         展示索引卡，不承载源内容
+├── modules/         可复用的算法、工作流和工程模块
+└── skills/          可由 Codex 显式调用的个人 Skill
 ```
+
+## 打开方式
+
+第一次使用时，在 Obsidian 中选择 **Open folder as vault**，打开 `F:\AIGC-Library`，然后进入 `HOME.md`。完成一次注册后，可以双击 `Open-AIGC-Library.url` 直接回到首页。
+
+内容与展示保持分离：`skills/` 和 `modules/` 是可复制的源资产，`catalog/`、`.base` 和 `.canvas` 只是可替换的展示层。
 
 当前 Skill：
 

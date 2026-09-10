@@ -1,0 +1,97 @@
+filters:
+  and:
+    - file.inFolder("catalog")
+    - file.ext == "md"
+properties:
+  note.type:
+    displayName: 类型
+  note.status:
+    displayName: 状态
+  note.stage:
+    displayName: 阶段
+  note.summary:
+    displayName: 简介
+  note.scope:
+    displayName: 适用范围
+  note.runtime:
+    displayName: 运行条件
+  note.invocation:
+    displayName: 调用方式
+  note.source:
+    displayName: 源文件
+  note.workflow-before:
+    displayName: 上一步
+  note.workflow-next:
+    displayName: 下一步
+views:
+  - type: cards
+    name: 全部资产
+    order:
+      - file.name
+      - type
+      - status
+      - summary
+      - scope
+      - runtime
+      - source
+    sort:
+      - property: type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    groupBy:
+      property: type
+      direction: ASC
+    image: note.cover
+    imageFit: cover
+    imageAspectRatio: 0.24
+    cardSize: 260
+  - type: cards
+    name: Prompt
+    filters:
+      and:
+        - type == "prompt"
+    order:
+      - file.name
+      - status
+      - summary
+      - invocation
+      - source
+    sort:
+      - property: file.name
+        direction: ASC
+    image: note.cover
+    imageFit: cover
+    imageAspectRatio: 0.24
+    cardSize: 260
+  - type: cards
+    name: 算法模块
+    filters:
+      and:
+        - type == "module"
+    order:
+      - file.name
+      - status
+      - summary
+      - scope
+      - runtime
+      - source
+    sort:
+      - property: file.name
+        direction: ASC
+    image: note.cover
+    imageFit: cover
+    imageAspectRatio: 0.24
+    cardSize: 260
+  - type: table
+    name: 关系与条件
+    order:
+      - file.name
+      - type
+      - stage
+      - scope
+      - runtime
+      - workflow-before
+      - workflow-next
+      - source
+
