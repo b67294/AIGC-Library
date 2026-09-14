@@ -49,6 +49,12 @@ model = AutoModelForImageSegmentation.from_pretrained(
 
 ## 3. 完整 ComfyUI 工作流与参数
 
+可直接复制或用于 API 调用的原始工作流附件：
+
+- [birefnet-rmbg2-vitmatte-api.json](workflows/birefnet-rmbg2-vitmatte-api.json)
+
+该附件与项目中的 `comfyui/BiRefNet.json`、服务端的 `birefnet_cutout.json` 内容一致。下面保留等效 JSON，方便只阅读本文档时直接核对参数。
+
 下面是项目工作流的等效完整 API JSON。
 
 ```json
