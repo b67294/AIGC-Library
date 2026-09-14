@@ -14,7 +14,7 @@ AIGC-Library/
 
 ## 打开方式
 
-第一次使用时，在 Obsidian 中选择 **Open folder as vault**，打开 `F:\AIGC-Library`，然后进入 `HOME.md`。完成一次注册后，可以双击 `Open-AIGC-Library.url` 直接回到首页。
+公开仓库的本地位置是 `F:\AIGC-Hub\public`。统一浏览时，在 Obsidian 中选择 **Open folder as vault**，打开 `F:\AIGC-Hub`，然后进入 `private/views/HOME.md`。完成一次注册后，可以双击 `Open-AIGC-Library.url` 直接回到统一首页。
 
 内容与展示保持分离：`skills/` 和 `modules/` 是可复制的源资产，`catalog/`、`.base` 和 `.canvas` 只是可替换的展示层。
 
