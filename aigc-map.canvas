@@ -1,80 +1,11 @@
 {
   "nodes": [
-    {
-      "id": "group-decision01",
-      "type": "group",
-      "x": 0,
-      "y": 0,
-      "width": 360,
-      "height": 420,
-      "label": "01 · 决策阶段",
-      "color": "5"
-    },
-    {
-      "id": "group-build0002",
-      "type": "group",
-      "x": 460,
-      "y": 0,
-      "width": 360,
-      "height": 420,
-      "label": "02 · 可复用资产",
-      "color": "4"
-    },
-    {
-      "id": "group-review003",
-      "type": "group",
-      "x": 920,
-      "y": 0,
-      "width": 360,
-      "height": 420,
-      "label": "03 · 复盘沉淀",
-      "color": "3"
-    },
-    {
-      "id": "card-explore0001",
-      "type": "file",
-      "file": "catalog/探索成熟方案.md",
-      "x": 40,
-      "y": 90,
-      "width": 280,
-      "height": 240
-    },
-    {
-      "id": "card-background02",
-      "type": "file",
-      "file": "catalog/去背景技术复刻.md",
-      "x": 500,
-      "y": 90,
-      "width": 280,
-      "height": 240
-    },
-    {
-      "id": "card-whitebox003",
-      "type": "file",
-      "file": "catalog/效果白盒拆解.md",
-      "x": 960,
-      "y": 90,
-      "width": 280,
-      "height": 240
-    }
+    {"id":"title-public-assets","type":"text","x":0,"y":-160,"width":1180,"height":100,"text":"# AIGC 公开资产\n3 项 · 2 个 Prompt · 1 个可复用模块"},
+    {"id":"group-public-prompts","type":"group","x":0,"y":0,"width":760,"height":470,"label":"公开 Prompt · 2"},
+    {"id":"card-explore-solutions","type":"text","x":40,"y":70,"width":320,"height":330,"text":"## 探索成熟方案\n\n`公开` `Prompt` `仅显式调用`\n\n先看成熟方案与完整选项空间，再决定是否实现。包含前提、成本、关系与切换条件。\n\n**调用**\n`$prompt-explore-solutions`\n\n[[public/skills/prompt-explore-solutions/SKILL|打开原内容 →]]"},
+    {"id":"card-effect-whitebox","type":"text","x":400,"y":70,"width":320,"height":330,"text":"## 效果白盒拆解\n\n`公开` `Prompt` `仅显式调用`\n\n把已经实现的效果拆成核心原理、技术骨架、流程和可复用心智模型。\n\n**调用**\n`$prompt-effect-whitebox`\n\n[[public/skills/prompt-effect-whitebox/SKILL|打开原内容 →]]"},
+    {"id":"group-public-modules","type":"group","x":800,"y":0,"width":380,"height":470,"label":"可复用模块 · 1"},
+    {"id":"card-background-removal","type":"text","x":840,"y":70,"width":300,"height":330,"text":"## 去背景技术复刻\n\n`公开` `图像处理` `GPU`\n\n主链路：RMBG-2.0 / BiRefNet 粗分割 → VITMatte 边缘精修。\n\n**运行条件**\nComfyUI · CUDA GPU\n\n[[public/modules/background-removal/README|打开说明 →]]\n[[public/modules/background-removal/workflows/birefnet-rmbg2-vitmatte-api.json|打开工作流 JSON →]]"}
   ],
-  "edges": [
-    {
-      "id": "edge-explore-build",
-      "fromNode": "card-explore0001",
-      "fromSide": "right",
-      "toNode": "card-background02",
-      "toSide": "left",
-      "label": "选择方案后实现"
-    },
-    {
-      "id": "edge-build-review",
-      "fromNode": "card-background02",
-      "fromSide": "right",
-      "toNode": "card-whitebox003",
-      "toSide": "left",
-      "label": "实现后提炼"
-    }
-  ]
+  "edges": []
 }
-
