@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt - Debug Explain"
+  short_description: "用通俗语言解释问题成因、判断依据、修复原理与预防方法"
+  default_prompt: "Use $prompt-debug-explain to explain why this problem happened and how the fix works."
+
+policy:
+  allow_implicit_invocation: false

@@ -6,7 +6,7 @@
 AIGC-Library/
 ├── HOME.md          Obsidian 首页
 ├── library.base     可筛选的资产卡片库
-├── aigc-map.canvas  重要资产的关系地图
+├── aigc-map.canvas  可点击源文件的视觉资产总览
 ├── catalog/         展示索引卡，不承载源内容
 ├── modules/         可复用的算法、工作流和工程模块
 └── skills/          可由 Codex 显式调用的个人 Skill
@@ -22,6 +22,7 @@ AIGC-Library/
 
 - `prompt-explore-solutions`：实现前先探索成熟方案与完整选项空间。
 - `prompt-effect-whitebox`：将已实现的效果拆解为可理解、可复用的白盒心智模型。
+- `prompt-debug-explain`：修复问题的同时解释成因、判断依据和修复原理。
 
 当前 Module：
 

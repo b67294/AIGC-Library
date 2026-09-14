@@ -1,11 +1,12 @@
 {
-  "nodes": [
-    {"id":"title-public-assets","type":"text","x":0,"y":-160,"width":1180,"height":100,"text":"# AIGC 公开资产\n3 项 · 2 个 Prompt · 1 个可复用模块"},
-    {"id":"group-public-prompts","type":"group","x":0,"y":0,"width":760,"height":470,"label":"公开 Prompt · 2"},
-    {"id":"card-explore-solutions","type":"text","x":40,"y":70,"width":320,"height":330,"text":"## 探索成熟方案\n\n`公开` `Prompt` `仅显式调用`\n\n先看成熟方案与完整选项空间，再决定是否实现。包含前提、成本、关系与切换条件。\n\n**调用**\n`$prompt-explore-solutions`\n\n[[public/skills/prompt-explore-solutions/SKILL|打开原内容 →]]"},
+	"nodes":[
+    {"id":"title-public-assets","type":"text","x":0,"y":-160,"width":1180,"height":100,"text":"# AIGC 公开资产\n4 项 · 3 个 Prompt · 1 个可复用模块"},
+    {"id":"group-public-prompts","type":"group","x":0,"y":0,"width":1120,"height":470,"label":"公开 Prompt · 3"},
+		{"id":"card-explore-solutions","type":"text","x":40,"y":70,"width":320,"height":330,"text":"## 探索成熟方案\n\n`公开` `Prompt` `仅显式调用`\n\n先看成熟方案与完整选项空间，再决定是否实现。包含前提、成本、关系与切换条件。\n\n**调用**\n`$prompt-explore-solutions`\n\n[[public/skills/prompt-explore-solutions/SKILL|打开原内容 →]]"},
     {"id":"card-effect-whitebox","type":"text","x":400,"y":70,"width":320,"height":330,"text":"## 效果白盒拆解\n\n`公开` `Prompt` `仅显式调用`\n\n把已经实现的效果拆成核心原理、技术骨架、流程和可复用心智模型。\n\n**调用**\n`$prompt-effect-whitebox`\n\n[[public/skills/prompt-effect-whitebox/SKILL|打开原内容 →]]"},
-    {"id":"group-public-modules","type":"group","x":800,"y":0,"width":380,"height":470,"label":"可复用模块 · 1"},
-    {"id":"card-background-removal","type":"text","x":840,"y":70,"width":300,"height":330,"text":"## 去背景技术复刻\n\n`公开` `图像处理` `GPU`\n\n主链路：RMBG-2.0 / BiRefNet 粗分割 → VITMatte 边缘精修。\n\n**运行条件**\nComfyUI · CUDA GPU\n\n[[public/modules/background-removal/README|打开说明 →]]\n[[public/modules/background-removal/workflows/birefnet-rmbg2-vitmatte-api.json|打开工作流 JSON →]]"}
-  ],
-  "edges": []
+    {"id":"card-debug-explain","type":"text","x":760,"y":70,"width":320,"height":330,"text":"## 问题诊断与修复解释\n\n`公开` `Prompt` `仅显式调用`\n\n遇到问题时，不只修好，还解释成因、判断依据、修复原理以及如何验证和预防。\n\n**调用**\n`$prompt-debug-explain`\n\n[[public/skills/prompt-debug-explain/SKILL|打开原内容 →]]"},
+    {"id":"group-public-modules","type":"group","x":0,"y":520,"width":1180,"height":420,"label":"可复用模块 · 1"},
+    {"id":"card-background-removal","type":"text","x":40,"y":590,"width":500,"height":280,"text":"## 去背景技术复刻\n\n`公开` `图像处理` `GPU`\n\n主链路：RMBG-2.0 / BiRefNet 粗分割 → VITMatte 边缘精修。\n\n**运行条件**　ComfyUI · CUDA GPU\n\n[[public/modules/background-removal/README|打开说明 →]]　·　[[public/modules/background-removal/workflows/birefnet-rmbg2-vitmatte-api.json|打开工作流 JSON →]]"}
+	],
+	"edges":[]
 }
