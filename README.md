@@ -23,6 +23,7 @@ AIGC-Library/
 - `prompt-explore-solutions`：实现前先探索成熟方案与完整选项空间。
 - `prompt-effect-whitebox`：将已实现的效果拆解为可理解、可复用的白盒心智模型。
 - `prompt-debug-explain`：修复问题的同时解释成因、判断依据和修复原理。
+- `module-reuse-reviewer`：评估项目模块的复用潜力并生成透明可验证的候选知识卡。
 
 当前 Module：
 

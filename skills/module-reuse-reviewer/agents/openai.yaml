@@ -1,0 +1,7 @@
+interface:
+  display_name: "Module Reuse Reviewer"
+  short_description: "评估项目模块的复用潜力并生成透明可验证的候选知识卡"
+  default_prompt: "Use $module-reuse-reviewer to assess this project module and create a reusable candidate card."
+
+policy:
+  allow_implicit_invocation: false
