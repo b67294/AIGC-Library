@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reference": "input/reference.png",
+  "style": "明亮扁平插画，深色细轮廓，蓝绿、珊瑚红与暖黄色，轻微手绘质感",
+  "sheet_defaults": {
+    "max_assets_per_sheet": 6,
+    "margin_percent": 12,
+    "background_instruction": "真实透明背景，不画棋盘格或白底",
+    "common_instruction": "每格一个完整视觉单元，元素互不接触，不画格线或编号；只保留清单明确要求的文字"
+  },
+  "assets": [
+    {"id": "large-butterfly", "description": "一只完整的大型彩色蝴蝶，左右展开翅膀，深蓝外缘，翅面有蓝绿、珊瑚红和暖黄色块"},
+    {"id": "small-butterfly", "description": "一只完整的小型纯色蝴蝶，圆润简洁翅形"},
+    {"id": "flower-stamp", "description": "一枚完整的波浪齿邮票，内部是橙红花朵、蓝色小花和绿色叶片"},
+    {"id": "thank-you-badge", "description": "一个完整的椭圆感谢徽章，双层蓝色边框、绿色叶枝、橙色爱心，保留文字 THANK YOU"},
+    {"id": "heart-envelope", "description": "一个完整的米白信封，深色细轮廓，封口处有珊瑚红爱心"},
+    {"id": "yellow-star", "description": "一颗完整的暖黄色五角星"},
+    {"id": "blue-rings", "description": "三条细蓝线组成的手绘同心圆环"},
+    {"id": "dotted-flight-path", "description": "一条独立的黑色虚线蝴蝶飞行轨迹，包含柔和回环"}
+  ],
+  "sheets": [
+    {
+      "id": "sheet-1",
+      "columns": 3,
+      "rows": 2,
+      "asset_ids": ["large-butterfly", "small-butterfly", "flower-stamp", "thank-you-badge", "heart-envelope", "yellow-star"],
+      "prompt_file": "prompts/sheet-1.txt",
+      "output_file": "sheets/sheet-1.png"
+    },
+    {
+      "id": "sheet-2",
+      "columns": 3,
+      "rows": 1,
+      "asset_ids": ["blue-rings", "dotted-flight-path"],
+      "prompt_file": "prompts/sheet-2.txt",
+      "output_file": "sheets/sheet-2.png"
+    }
+  ]
+}

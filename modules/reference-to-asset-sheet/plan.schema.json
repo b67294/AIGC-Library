@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/b67294/AIGC-Library/reference-to-asset-sheet/plan.schema.json",
+  "title": "Reference to Asset Sheet Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "reference", "style", "assets", "sheets"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "reference": {"type": "string", "minLength": 1},
+    "style": {"type": "string", "minLength": 1},
+    "sheet_defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_assets_per_sheet": {"type": "integer", "minimum": 1, "maximum": 12, "default": 6},
+        "margin_percent": {"type": "integer", "minimum": 0, "maximum": 40, "default": 12},
+        "background_instruction": {"type": "string", "default": "真实透明背景，不画棋盘格或白底"},
+        "common_instruction": {"type": "string", "default": "每格一个完整视觉单元，元素互不接触，不画格线、编号或新增文字"}
+      }
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "description"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+          "description": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "sheets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "columns", "rows", "asset_ids", "prompt_file", "output_file"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+          "columns": {"type": "integer", "minimum": 1},
+          "rows": {"type": "integer", "minimum": 1},
+          "asset_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "prompt_file": {"type": "string", "minLength": 1},
+          "output_file": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

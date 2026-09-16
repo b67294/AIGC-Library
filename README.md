@@ -28,3 +28,4 @@ AIGC-Library/
 当前 Module：
 
 - `background-removal`：RMBG-2.0、BiRefNet 与 VITMatte 去背景流程。
+- `reference-to-asset-sheet`：从参考图整理元素清单、分板提示词并生成多元素 Sheet。
