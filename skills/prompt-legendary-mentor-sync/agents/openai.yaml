@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt - Legendary Mentor Sync"
+  short_description: "用顶尖行业高手视角拆解纠结并给出真实案例和最小行动"
+  default_prompt: "Use $prompt-legendary-mentor-sync to analyze this dilemma from a top industry practitioner perspective."
+
+policy:
+  allow_implicit_invocation: false

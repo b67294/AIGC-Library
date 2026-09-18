@@ -1,10 +1,11 @@
 {
 	"nodes":[
-		{"id":"title-public-assets","type":"text","x":0,"y":-160,"width":1540,"height":100,"text":"# AIGC 公开资产\n7 项 · 3 个 Prompt · 2 个工程 Skill · 2 个可复用模块"},
-		{"id":"group-public-prompts","type":"group","x":0,"y":0,"width":1120,"height":470,"label":"公开 Prompt · 3"},
+		{"id":"title-public-assets","type":"text","x":0,"y":-160,"width":1540,"height":100,"text":"# AIGC 公开资产\n8 项 · 4 个 Prompt · 2 个工程 Skill · 2 个可复用模块"},
+		{"id":"group-public-prompts","type":"group","x":0,"y":0,"width":1480,"height":470,"label":"公开 Prompt · 4"},
 		{"id":"card-explore-solutions","type":"text","x":40,"y":70,"width":320,"height":330,"text":"## 探索成熟方案\n\n`公开` `Prompt` `仅显式调用`\n\n先看成熟方案与完整选项空间，再决定是否实现。包含前提、成本、关系与切换条件。\n\n**调用**\n`$prompt-explore-solutions`\n\n[[public/skills/prompt-explore-solutions/SKILL|打开原内容 →]]"},
 		{"id":"card-effect-whitebox","type":"text","x":400,"y":70,"width":320,"height":330,"text":"## 效果白盒拆解\n\n`公开` `Prompt` `仅显式调用`\n\n把已经实现的效果拆成核心原理、技术骨架、流程和可复用心智模型。\n\n**调用**\n`$prompt-effect-whitebox`\n\n[[public/skills/prompt-effect-whitebox/SKILL|打开原内容 →]]"},
 		{"id":"card-debug-explain","type":"text","x":760,"y":70,"width":320,"height":330,"text":"## 问题诊断与修复解释\n\n`公开` `Prompt` `仅显式调用`\n\n遇到问题时，不只修好，还解释成因、判断依据、修复原理以及如何验证和预防。\n\n**调用**\n`$prompt-debug-explain`\n\n[[public/skills/prompt-debug-explain/SKILL|打开原内容 →]]"},
+		{"id":"card-legendary-mentor-sync","type":"text","x":1120,"y":70,"width":320,"height":330,"text":"## 传奇导师意识同步\n\n`公开` `Prompt` `仅显式调用`\n\n用顶尖从业者的底层逻辑拆解纠结，以真实当代案例校准，最后只给一个最小行动。\n\n**调用**\n`$prompt-legendary-mentor-sync`\n\n[[public/skills/prompt-legendary-mentor-sync/SKILL|打开原内容 →]]"},
 		{"id":"group-public-skills","type":"group","x":0,"y":520,"width":560,"height":730,"label":"工程 Skill · 2"},
 		{"id":"card-module-reuse-reviewer","type":"text","x":40,"y":590,"width":480,"height":280,"text":"## 模块复用评审\n\n`公开` `工程 Skill` `仅显式调用`\n\n检查指定模块的输入、输出、中间产物、依赖和项目耦合，生成复用候选卡。\n\n**调用** `$module-reuse-reviewer`\n\n[[public/skills/module-reuse-reviewer/SKILL|打开原内容 →]]"},
 		{"id":"card-image-experiment-report","type":"text","x":40,"y":900,"width":480,"height":280,"text":"## 图像实验报告\n\n`公开` `工程 Skill` `自动或显式调用`\n\n把已有图像实验整理成证据明确的中文报告，并保留原图、对比图和复现材料。\n\n**调用** `$image-experiment-report`\n\n[[public/skills/image-experiment-report/SKILL|打开原内容 →]]"},
