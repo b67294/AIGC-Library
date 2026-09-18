@@ -9,7 +9,7 @@ AIGC-Library/
 ├── aigc-map.canvas  可点击源文件的视觉资产总览
 ├── catalog/         展示索引卡，不承载源内容
 ├── modules/         可复用的算法、工作流和工程模块
-└── skills/          可由 Codex 显式调用的个人 Skill
+└── skills/          Codex 可调用的个人 Skill
 ```
 
 ## 打开方式
@@ -24,6 +24,7 @@ AIGC-Library/
 - `prompt-effect-whitebox`：将已实现的效果拆解为可理解、可复用的白盒心智模型。
 - `prompt-debug-explain`：修复问题的同时解释成因、判断依据和修复原理。
 - `module-reuse-reviewer`：评估项目模块的复用潜力并生成透明可验证的候选知识卡。
+- `image-experiment-report`：整理已有图像实验，保留证据、对比图和复现材料并打包交付。
 
 当前 Module：
 
